@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: lightgray;
+}
+
+/* Ricordati di mettere gli sfondi colorati
+ai container per visualizzarli meglio */
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.container.one {
+  margin-top: 20px;
+}
+
+.container.two {
+  margin-bottom: 20px;
+}
+
+.item {
+  display: inline-block;
+  text-align: center;
+  width: 32.999999999999999999%;
+  position: relative;
+  cursor: pointer;
+}
+
+.item img {
+  width: 100%;
+}
+
+/* hide esite ma scompare cn display none */
+
+.item .hide {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  font-size: 20px;
+  display: none;
+}
+
+/* Quando passo su item allora
+ hide compare con display blocl */
+
+.item:hover .hide {
+  display: block;
+  color: red;
+}
+
+.green1 {
+  background-color: green;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.red {
+  background-color: red;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
